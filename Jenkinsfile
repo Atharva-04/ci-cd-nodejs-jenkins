@@ -11,14 +11,14 @@ pipeline {
 
         stage('Install Dependencies & Test') {
             steps {
-                sh 'npm install'
-                sh 'npm test'
+                bat 'npm install'
+                bat 'npm test'
             }
         }
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t ci-cd-node-app .'
+                bat 'docker build -t ci-cd-node-app .'
             }
         }
 
