@@ -1,0 +1,23 @@
+{
+  "name": "ci-cd-nodejs-jenkins",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+
+"scripts": {
+  "start": "node src/server.js",
+  "test": "mocha tests --exit"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "chai": "^6.2.1",
+    "mocha": "^11.7.5",
+    "supertest": "^7.1.4"
+  }
+}
